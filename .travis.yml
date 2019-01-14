@@ -1,0 +1,9 @@
+# .travis.yml
+language: c
+
+sudo: required
+
+services:
+  - docker
+
+script: docker run -it --rm -v "$PWD:/build" root670/docker-psxsdk make test
