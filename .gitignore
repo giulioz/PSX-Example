@@ -3,3 +3,4 @@ cd_root
 *.exe
 *.cue
 *.elf
+.DS_Store
