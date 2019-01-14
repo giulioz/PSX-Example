@@ -5,6 +5,7 @@ EXE_SUFFIX =
 CFLAGS = 
 
 all:
+	mkdir cd_root
 	psx-gcc -DEXAMPLES_VMODE=$(EXAMPLES_VMODE) -o test.elf test.c
 	elf2exe test.elf test.exe
 	cp test.exe cd_root
